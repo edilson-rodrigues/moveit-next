@@ -1,5 +1,7 @@
+import styles from '../styles/components/Profile.module.css';
+
 const Profile = () => (
-  <div>
+  <div className={styles.profileContainer}>
     <img src="https://github.com/edilson-rodrigues.png" alt="profile-github" />
     <div>
       <strong>Edilson Rodrigues</strong>
