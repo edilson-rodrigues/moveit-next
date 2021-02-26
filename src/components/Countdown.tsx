@@ -59,7 +59,7 @@ const Countdown = () => {
           >
             <div>
               Ciclo encerrado
-              <img src="icons/check_circle.svg" alt="level" />
+              <img src="icons/check_circle.svg" alt="Check Circle" />
             </div>
           </button>
         )}
@@ -86,7 +86,7 @@ const Countdown = () => {
             onClick={startCountdown}>
             <div>
               Iniciar um ciclo
-              <img src="icons/play_arrow.svg" alt="level" />
+              <img src="icons/play_arrow.svg" alt="Play Arrow" />
             </div>
           </button>)}
 

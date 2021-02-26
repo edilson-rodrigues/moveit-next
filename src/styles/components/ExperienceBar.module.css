@@ -23,7 +23,13 @@
 }
 
 span.currentExperience {
+    opacity: 0;
     position: absolute;
     top: 12px;
     transform: translateX(-50%);
+    transition: opacity 0.3s linear;
+}
+
+.experienceBar:hover span.currentExperience {
+    opacity: 1;
 }
