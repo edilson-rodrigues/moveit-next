@@ -64,11 +64,11 @@
 
 .countdownButtonActive {
     background: var(--white);
-    color: var(--title);
+    color: var(--text);
 }
 
 .countdownButtonActive svg {
-    fill: #666666;
+    fill: var(--text);
 }
 
 .countdownButtonActive:hover svg {
@@ -84,6 +84,7 @@
     background: var(--white);
     color: var(--text);
     cursor: not-allowed;
+    border-bottom: 4px solid var(--green);
 }
 
 .countdownButton div {
@@ -101,5 +102,3 @@
 .countdownButton div svg {
     margin-left: 0.5rem;
 }
-
-

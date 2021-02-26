@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 let countdownTimeOut: NodeJS.Timeout;
 
 const Countdown = () => {
-    const initialState = 25 * 60;
+    const initialState = 0.1 * 60;
     const [time, setTime] = useState(initialState);
     const [isActive, setIsActive] = useState(false);
     const [hasFinished, setHasFinished] = useState(false);
