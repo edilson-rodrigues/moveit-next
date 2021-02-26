@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 let countdownTimeOut: NodeJS.Timeout;
 
 const Countdown = () => {
-    const initialState = 0.1 * 60;
+    const initialState = 25 * 60;
     const [time, setTime] = useState(initialState);
     const [isActive, setIsActive] = useState(false);
     const [hasFinished, setHasFinished] = useState(false);
@@ -57,7 +57,10 @@ const Countdown = () => {
             disabled
             className={styles.countdownButton}
           >
-            Ciclo encerrado
+            <div>
+              Ciclo encerrado
+              <img src="icons/check_circle.svg" alt="level" />
+            </div>
           </button>
         )}
 
@@ -67,7 +70,12 @@ const Countdown = () => {
             className={`${styles.countdownButton} ${styles.countdownButtonActive}`}
             onClick={resetCountdown}
           >
-            Abandonar um ciclo
+            <div>
+              Abandonar ciclo
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" />
+              </svg>
+            </div>
           </button>
         )}
 
@@ -75,9 +83,11 @@ const Countdown = () => {
           <button
             type="button"
             className={styles.countdownButton}
-            onClick={startCountdown}
-          >
-            Iniciar um ciclo
+            onClick={startCountdown}>
+            <div>
+              Iniciar um ciclo
+              <img src="icons/play_arrow.svg" alt="level" />
+            </div>
           </button>)}
 
       </div>
